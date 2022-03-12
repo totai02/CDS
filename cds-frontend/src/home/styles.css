@@ -1,0 +1,204 @@
+/**
+ * React Static Boilerplate
+ * https://github.com/koistya/react-static-boilerplate
+ *
+ * Copyright © 2015-2016 Konstantin Tarkus (@koistya)
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE.txt file in the root directory of this source tree.
+ */
+
+@font-face {
+    font-family: utmBebas;
+    src: url(../../assets/fonts/utm-bebas.ttf);
+}
+
+@font-face {
+    font-family: digital7;
+    src: url(../../assets/fonts/digital-7.ttf);
+}
+
+.lotteryResultTitle {
+    text-align: center;
+    text-shadow: 0.1875rem 0.1875rem 0.625rem black,
+    0.1875rem 0.1875rem 0.625rem black;
+    color: white;
+    font-size: 4.5rem;
+    font-family: utmBebas, monospace;
+    letter-spacing: 0.125rem;
+}
+
+.teamBlock {
+    padding: 15px;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+    border: 2px solid white;
+    color: white;
+    font-size: 3rem;
+    font-family: digital7, monospace;
+    /*transform: skew(-10deg); !* Standard syntax *!*/
+}
+
+.greenTeam {
+    text-shadow: 0px 0px 10px #4cb848,
+    0px 0px 10px #4cb848,
+    0px 0px 10px #4cb848;
+
+    box-shadow: 0px 0px 20px #4cb848,
+    inset 0px 0px 20px #4cb848
+}
+
+.redTeam {
+    text-shadow: 0px 0px 10px #ff263a,
+    0px 0px 10px #ff263a,
+    0px 0px 10px #ff263a;
+
+    box-shadow: 0px 0px 20px #ff263a,
+    inset 0px 0px 20px #ff263a
+}
+
+.timer {
+    text-align: center;
+    color: white;
+    text-shadow: 0.1rem 0.1rem 0.5rem black,
+    0.2rem 0.2rem 1rem black;
+    background-color: transparent;
+    border: 0.6rem solid white;
+    font-size: 7rem;
+    width: 100%;
+    padding: 0.8rem 1rem 0.8rem 1rem;
+    border-radius: 10rem;
+    -moz-border-radius: 10rem;
+    -webkit-border-radius: 10rem;
+}
+
+.timerBlink {
+    animation: blink-animation 1s infinite;
+    text-align: center;
+    color: white;
+    text-shadow: 0.1rem 0.1rem 0.5rem black,
+    0.2rem 0.2rem 1rem black;
+    background-color: transparent;
+    border: 0.6rem solid white;
+    font-size: 7rem;
+    width: 100%;
+    padding: 0.8rem 1rem 0.8rem 1rem;
+    border-radius: 10rem;
+    -moz-border-radius: 10rem;
+    -webkit-border-radius: 10rem;
+}
+
+@keyframes blink-animation {
+    to {
+        color: transparent;
+        text-shadow: 0.1rem 0.1rem 0.5rem transparent,
+        0.2rem 0.2rem 1rem transparent;
+    }
+}
+
+.resultTitle {
+    font-family: utmBebas, monospace;
+    letter-spacing: 0.15rem;
+    color: white;
+    padding: 0.5rem;
+    font-size: 2.6rem;
+    text-shadow: 1px 1px 10px #000;
+}
+
+.resultValue {
+    background-color: white;
+    font-family: digital7, monospace;
+    color: black;
+    font-weight: 800;
+    font-size: 2rem;
+    padding: 0.1rem 0.5rem 0.5rem 0.5rem;
+    text-align: center;
+    border: 0.6rem solid white;
+    border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    text-shadow: none;
+}
+
+.teamName {
+    color: #fff;
+    font-size: 4rem;
+    font-family: digital7, monospace;
+    text-align: center;
+}
+
+.centerImg {
+    width: 236px;
+    margin: auto;
+}
+
+.greenTeamText {
+    text-shadow: 0px 0px 1rem #2148ff,
+    0px 0px 1rem #2148ff,
+    0px 0px 1rem #2148ff,
+    0px 0px 1rem #2148ff,
+    0px 0px 1rem #2148ff,
+    0px 0px 1rem #2148ff,
+    0px 0px 1rem #2148ff,
+    0px 0px 1rem #2148ff,
+    0px 0px 1rem #2148ff,
+    0px 0px 1rem #2148ff;
+}
+
+.redTeamText {
+    text-shadow: 0px 0px 1rem #b81c23,
+    0px 0px 1rem #b81c23,
+    0px 0px 1rem #b81c23,
+    0px 0px 1rem #b81c23,
+    0px 0px 1rem #b81c23,
+    0px 0px 1rem #b81c23,
+    0px 0px 1rem #b81c23,
+    0px 0px 1rem #b81c23,
+    0px 0px 1rem #b81c23,
+    0px 0px 1rem #b81c23;
+}
+
+.resultTable {
+    color: white;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-family: utmBebas, monospace;
+    letter-spacing: 0.125rem;
+}
+
+.resultTable > thead > tr {
+    color: white;
+}
+
+.resultTable > thead > tr > th {
+    font-family: utmBebas, monospace;
+    letter-spacing: 0.125rem;
+    font-weight: normal;
+    border: 0;
+    vertical-align: middle;
+    font-size: 3rem;
+    text-shadow: 5px 5px 10px black;
+}
+
+.resultTable > tbody > tr > td {
+    border: 0;
+    font-family: digital7, monospace;
+    vertical-align: middle;
+    font-size: 2.5rem;
+    height: 3.9rem;
+    text-shadow: 3px 3px 10px black,
+    1px 1px 10px #000000;
+}
+
+.resultTable > thead > tr > th {
+    text-align: center;
+}
+
+.resultTable > tbody > tr:nth-child(odd) {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.resultTable > tbody > tr:nth-child(even) {
+    /*background-color: #FDEFE9*/
+}
+

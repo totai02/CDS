@@ -1,0 +1,32 @@
+{
+  "name": "cuoc-dua-so",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "tsc && node ./bin/www",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "@types/async": "^2.4.1",
+    "@types/express": "^4.16.1",
+    "@types/lodash": "^4.14.121",
+    "@types/mqtt": "^2.5.0",
+    "@types/nedb": "^1.8.7",
+    "@types/socket.io": "^2.1.2",
+    "body-parser": "^1.18.3",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.3",
+    "ejs": "~2.5.6",
+    "express": "^4.16.4",
+    "lodash": "^4.17.4",
+    "morgan": "^1.9.1",
+    "mqtt": "^2.17.0",
+    "nedb": "^1.8.0",
+    "node-red": "^1.2.5",
+    "rosnodejs": "^3.0.0",
+    "serve-favicon": "~2.4.2",
+    "socket.io": "^2.2.0",
+    "typed-event-emitter": "^1.1.0",
+    "typescript": "^3.3.3333"
+  }
+}
